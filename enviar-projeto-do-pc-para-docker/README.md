@@ -120,4 +120,10 @@ docker stop -t=0 ID_DO_CONTAINER
 
 ### Iniciar o container
 ```bash
-docker start ID_DO_CONTAINER```
+docker start ID_DO_CONTAINER
+```
+
+# Autor
+
+Prof. Diego Max da Silva<br>
+https://lattes.cnpq.br/4370663836049458
