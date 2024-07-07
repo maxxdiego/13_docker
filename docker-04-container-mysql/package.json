@@ -1,15 +1,22 @@
 {
-  "name": "diego",
+  "name": "nodejs",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto para testar com Docker",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ."
+	"start": "node ."
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql2": "^3.2.0",
+    "sequelize": "^6.30.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "sequelize-cli": "^6.6.0"
   }
 }
