@@ -116,6 +116,27 @@ docker run -d -p 80:80 dockersamples/static-site
 ```bash
 http://localhost:80
 ```
+### ------------------------------------------------------------------
+
+### Removendo as imagens
+```bash
+docker rmi <nome_da_imagem>
+```
+
+### Removendo todos os containers
+```bash
+docker container rm $(docker container ls -aq) --force
+```
+
+### Renomeando imagens 
+```bash
+docker tag <nome_da_imagem_atual:tag_atual> <nome_da_nova_imagem:nova_tag>
+```
+
+### Removendo todas as imagens
+```bash
+docker rmi $(docker image ls -aq) --force
+```
 
 # Autor
 
