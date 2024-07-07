@@ -1,0 +1,31 @@
+version: '3'
+services:
+  node-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: diego-app
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/diego-app
+      - /diego-app/node_modules
+    networks:
+      - diego-network
+  
+  mysql:
+    image: mysql:8.0.34
+    container_name: diego-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: nodeapp
+    volumes:
+    - mysql-data:/var/lib/mysql
+    networks:
+     - diego-network
+
+networks:
+  diego-network:
+
+volumes:
+  mysql-data:
