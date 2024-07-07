@@ -19,10 +19,12 @@ docker pull hello-world
 ### Verificar as imagens existentes na máquina
 ```bash
 docker images
+```
 
 ### Rodar o container
 ```bash
 docker run hello-world
+```
 
 ### Verificar containers sendo executados
 ```bash
