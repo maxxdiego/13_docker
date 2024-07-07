@@ -4,7 +4,9 @@
 # Descrição
 :warning: Ainda em construção. :construction:
 
-## Aprendendo o Docker
+### ------------------------------------------------------------------
+
+# Aprendendo o Docker
 
 ### Endereço do Docker Hub (imagens oficiais)
 ```bash
@@ -86,7 +88,9 @@ docker unpause <container_id>
 docker rm <container_id>
 ```
 
-## Acessando o conteúdo de um site pelo navegador
+### ------------------------------------------------------------------
+
+# Acessando o conteúdo de um site pelo navegador
 
 ### Baixar e rodar o exemplo de um site estático do Docker Hub
 ```bash
@@ -106,6 +110,11 @@ docker rm <container_id> --force
 ### Baixar novamente mapeando a porta 80 do container para a porta 80 (para ser acessado pelo navegador)
 ```bash
 docker run -d -p 80:80 dockersamples/static-site
+```
+
+### Acessar a aplicação pelo navegador:
+```bash
+http://localhost:80
 ```
 
 # Autor
