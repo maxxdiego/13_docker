@@ -1,0 +1,94 @@
+/* Início da página Contato */
+.column{
+    width: calc(50% - 30px);
+}
+
+.text{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+form .field,
+form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+form .textarea{
+    height: 80px;
+    width: 100%;
+}
+
+form .field input,
+form .field textarea{
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 10px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+form .field input:focus,
+form .field textarea:focus{
+    border: 3px solid var(--active-color);
+}
+
+form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+
+form .buttonArea{
+    display: flex;
+    align-items: center;
+}
+
+.right form .buttonArea button{
+    background: var(--active-color);
+    color: var(--site-color);
+    display: block;
+    width: 160px !important;
+    height: 45px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-wrap: wrap;
+    border: 2px solid var(--active-color);
+    transition: all 0.3s ease;
+}
+
+.right form .buttonArea button:hover{
+    color: var(--active-color);
+    background: none;
+}
+/* Fim da página Contato */
+
+/* RESPONSIVIDADE */
+
+@media (max-width : 690px){
+    .right form .fields{
+        flex-direction: column;
+    }
+
+    .right form .name,
+    .right form .email{
+        margin: 0;
+    }
+}
+
+@media (max-width : 947px){
+    .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width : 1104px){
+
+}

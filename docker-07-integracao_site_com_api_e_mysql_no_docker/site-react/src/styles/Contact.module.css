@@ -1,0 +1,48 @@
+/* Início da página Contato */
+.content{
+    padding: 50px 0;
+}
+
+.maxWidth{
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.contact{
+    color: var(--site-color);
+    background: var(--main-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact .maxWidth{
+    padding: 30px;
+}
+
+.contact .title{
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.contact .contactContent{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Fim da página Contato */
+
+
+/* RESPONSIVIDADE */
+@media (max-width : 690px){
+    .content{
+        padding: 20px 0;
+    }
+
+    .contact .title{
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,112 @@
+/* Início da página Sobre a empresa */
+
+.content{
+    padding: 50px 0;
+}
+
+.maxWidth{
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.about{
+    color: var(--site-color);
+    background: var(--main-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .maxWidth{
+    padding: 50px;
+}
+
+.about .title{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 35px;
+    padding-top: 50px;
+}
+
+.about .aboutContent{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    background: var(--first-color);
+    border-radius: 6px;
+    padding: 30px;
+}
+
+.about .aboutContent .left{
+    width: 40%;
+    text-align: center;
+}
+
+.about .aboutContent .left img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.about .aboutContent .left img:hover{
+    scale: 1.1;
+}
+
+.about .aboutContent .right{
+    width: 60%;
+}
+
+.about .aboutContent .right .text{
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.about .aboutContent .right p{
+    text-align: justify;
+}
+/* Fim da página Sobre a empresa */
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 690px){
+    .content{
+        padding: 20px 0;
+
+    }
+}
+
+@media (max-width: 947px){
+    .about .aboutContent .column{
+        width: 100%;
+    }
+
+    .about .aboutContent .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .aboutContent .right{
+        flex: 100%;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1104px){
+    .about .aboutContent .left img{
+        width: 280px;
+        height: 280px;
+    }
+
+    .about .aboutContent .right{
+        padding-left: 10px;
+    }
+}

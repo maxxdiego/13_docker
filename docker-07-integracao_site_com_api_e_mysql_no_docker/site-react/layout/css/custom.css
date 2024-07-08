@@ -1,0 +1,625 @@
+/* Importando fontes do Google Fonts (https://fonts.google.com) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Criando variáveis globais */
+:root{
+    --main-color: #040714;
+    --site-color: #fff;
+    --active-color: #0063e5;
+    --first-color: #08132f;
+    --second-color: #090b13;
+    --third-color: #1b202a;
+}
+
+body{
+    background-color: var(--main-color);
+    color: var(--site-color);
+    /* font-family: 'Ubuntu', 'sans-serif'; */
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+/* Início do menu */
+
+.navbar .logo a{
+    color: var(--active-color);
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--main-color);
+    border-bottom: solid var(--third-color) 1px ;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    display: block;
+    color: var(--site-color);
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 25px;
+}
+
+.menu-btn{
+    color: var(--site-color);
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+/* Fim do menu */
+
+
+/* Início do topo */
+
+section{
+    padding: 50px 0;
+}
+
+.top{
+    color: var(--site-color);
+    display: flex;
+    /* background: url("../images/banner_top.jpg") no-repeat center; */
+    background: linear-gradient(to right, var(--main-color) 25%, rgba(255, 255, 255, 0)), url("../images/banner_top.jpg") no-repeat center;
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+}
+
+.top .max-width{
+    width: 100%;
+    display: flex;
+    margin-left: 30px;
+}
+
+.top .top-content .text-1{
+    font-size: 25px;
+    margin-bottom: -10px;
+}
+
+.top .top-content .text-2{
+    font-size: 48px;
+    font-weight: 400;
+    margin-left: -3px;
+    margin-bottom: 50px;
+
+}
+
+.top .top-content .text-3{
+    font-size: 32px;
+    margin: 5px 0;
+}
+
+.top .top-content a{
+    display: inline-block;
+    background: var(--active-color);
+    color: var(--site-color);
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 300;
+    border-radius: 6px;
+    border: 2px solid var(--active-color);
+    transition: all 0.3s ease;
+}
+
+.top .top-content a:hover{
+    color: var(--active-color);
+    background: none;
+}
+/* Fim do topo */
+
+
+/* Início da seção Serviços */
+.services{
+    color: var(--site-color);
+    background-color: var(--main-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 60px;
+}
+
+.services .title{
+    text-align: center;
+    margin: 40px 0;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.services .serv-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: var(--first-color);
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover{
+    background: var(--active-color);
+}
+
+.services .serv-content .card i{
+    font-size: 50px;
+    color: var(--active-color);
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+.services .serv-content .card:hover i{
+    color: var(--site-color)
+}
+
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+/* Fim da seção Serviços */
+
+/* Início da seção Serviço Premium */
+.premium{
+    color: var(--site-color);
+    background-color: var(--first-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.premium .title{
+    text-align: center;
+    margin: 50px;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.premium .premium-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.premium .premium-content .left{
+    width: 40%;
+    text-align: center;
+}
+
+.premium .premium-content .left img{
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.premium .premium-content .left img:hover{
+    filter: none;
+    scale: 1.1;
+}
+
+.premium .premium-content .right{
+    width: 60%;
+    padding-left: 20px;
+    padding-right: 60px;
+}
+
+.premium .premium-content .right .text{
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.premium .premium-content .right p{
+    text-align: justify;
+}
+
+.premium .premium-content .right a{
+    display: inline-block;
+    background: var(--active-color);
+    color: var(--site-color);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid var(--active-color);
+    transition: all 0.3s ease;
+}
+
+.premium .premium-content .right a:hover{
+    color: var(--active-color);
+    background: none;
+}
+
+/* Fim da seção Serviço Premium */
+
+
+/* Início do rodapé */
+footer{
+    background: var(--second-color);
+    height: 130px;
+    padding: 25px 23px;
+    color: var(--site-color);
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer span a{
+    color: var(--active-color);
+}
+
+footer span a:hover{
+    color: var(--site-color);
+}
+/* Fim do rodapé */
+
+
+/* Início da página Sobre a empresa */
+.about{
+    color: var(--site-color);
+    background: var(--main-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .max-width{
+    padding: 50px;
+}
+
+.about .title{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 35px;
+    padding-top: 50px;
+}
+
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    background: var(--first-color);
+    border-radius: 6px;
+    padding: 30px;
+}
+
+.about .about-content .left{
+    width: 40%;
+    text-align: center;
+}
+
+.about .about-content .left img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .left img:hover{
+    scale: 1.1;
+}
+
+.about .about-content .right{
+    width: 60%;
+}
+
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right p{
+    text-align: justify;
+}
+/* Fim da página Sobre a empresa */
+
+
+/* Início da página Contato */
+.contact{
+    color: var(--site-color);
+    background: var(--main-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact .max-width{
+    padding: 30px;
+}
+
+.contact .title{
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .left p{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: var(--active-color);
+}
+
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+
+.contact .contact-content .info .sub-title{
+    color: var(--active-color);
+}
+
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+
+.contact .right form .field input,
+.contact .right form .field textarea{
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 10px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.contact .right form .field input:focus,
+.contact .right form .field textarea:focus{
+    border: 3px solid var(--active-color);
+}
+
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button-area{
+    display: flex;
+    align-items: center;
+}
+
+.right form .button-area button{
+    background: var(--active-color);
+    color: var(--site-color);
+    display: block;
+    width: 160px !important;
+    height: 45px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-wrap: wrap;
+    border: 2px solid var(--active-color);
+    transition: all 0.3s ease;
+}
+
+.right form .button-area button:hover{
+    color: var(--active-color);
+    background: none;
+}
+/* Fim da página Contato */
+
+
+/* RESPONSIVIDADE */
+@media (max-width : 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+
+    #menu-icon.active:before{
+        content: "\f00d";
+    }
+
+    .navbar .menu{
+        background-color: var(--main-color);
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    #menu-site.active{
+        left: 0;
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 13px 0;
+        font-size: 25px;
+    }
+
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .premium .premium-content .column{
+        width: 100%;
+    }
+
+    .premium .premium-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .premium .premium-content .right{
+        flex: 100%;
+    }
+
+    .about .about-content .column{
+        width: 100%;
+    }
+
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-content .right{
+        flex: 100%;
+        padding-left: 0;
+    }
+
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 690px){
+    section{
+        padding: 20px 0;
+
+    }
+
+    .top .top-content .text-1{
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+    
+    .top .top-content .text-2{
+        font-size: 24px;
+        font-weight: 400;
+        margin-left: -3px;  
+    }
+    
+    .top .top-content .text-3{
+        font-size: 24px;
+        margin: 5px 0;
+    }
+
+    .services .serv-content .card{
+        width: 100%;
+    }
+
+    .contact .title{
+        margin-top: 50px;
+    }
+
+    .contact .right form .fields{
+        flex-direction: column;
+    }
+
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    }
+}
+
+@media (max-width: 1104px){
+    .premium .premium-content .left img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .about .about-content .left img{
+        width: 280px;
+        height: 280px;
+    }
+
+    .about .about-content .right{
+        padding-left: 10px;
+    }
+}

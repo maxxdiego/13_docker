@@ -1,0 +1,19 @@
+/* Início do rodapé */
+.footer{
+    background: var(--second-color);
+    height: 130px;
+    padding: 25px 23px;
+    color: var(--site-color);
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer span a{
+    color: var(--active-color);
+}
+
+.footer span a:hover{
+    color: var(--site-color);
+}
+/* Fim do rodapé */

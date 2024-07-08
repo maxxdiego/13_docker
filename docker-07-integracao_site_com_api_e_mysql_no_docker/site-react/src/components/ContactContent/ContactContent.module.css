@@ -1,0 +1,53 @@
+/* Início da página Contato */
+
+.column{
+    width: calc(50% - 30px);
+}
+
+.left p{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.left .icons{
+    margin: 10px 0;
+}
+
+.row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.row .info{
+    margin-left: 30px;
+}
+
+.row i{
+    font-size: 25px;
+    color: var(--active-color);
+}
+
+.info .head{
+    font-weight: 500;
+}
+
+.info .subTitle{
+    color: var(--active-color);
+}
+
+/* Fim da página Contato */
+
+/* RESPONSIVIDADE */
+@media (max-width : 690px){
+    .title{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width : 947px){
+    .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}

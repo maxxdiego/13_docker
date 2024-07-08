@@ -1,0 +1,91 @@
+/* Início do topo */
+.maxWidth{
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.content{
+    padding: 50px 0;
+}
+
+.top{
+    color: var(--site-color);
+    display: flex;
+    /* background: url("../images/banner_top.jpg") no-repeat center; */
+    /* background: linear-gradient(to right, var(--main-color) 25%, rgba(255, 255, 255, 0)), url("../images/banner_top.jpg") no-repeat center; */
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+}
+
+.top .maxWidth{
+    width: 100%;
+    display: flex;
+    margin-left: 30px;
+}
+
+.top .topContent .textOne{
+    font-size: 25px;
+    margin-bottom: -10px;
+}
+
+.top .topContent .textTwo{
+    font-size: 48px;
+    font-weight: 400;
+    margin-left: -3px;
+    margin-bottom: 50px;
+
+}
+
+.top .topContent .textThree{
+    font-size: 32px;
+    margin: 5px 0;
+}
+
+.top .topContent a{
+    display: inline-block;
+    background: var(--active-color);
+    color: var(--site-color);
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 300;
+    border-radius: 6px;
+    border: 2px solid var(--active-color);
+    transition: all 0.3s ease;
+}
+
+.top .topContent a:hover{
+    color: var(--active-color);
+    background: none;
+}
+/* Fim do topo */
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 690px){
+    .content{
+        padding: 20px 0;
+
+    }
+
+    .top .topContent .textOne{
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+    
+    .top .topContent .textTwo{
+        font-size: 24px;
+        font-weight: 400;
+        margin-left: -3px;  
+    }
+    
+    .top .topContent .textThree{
+        font-size: 24px;
+        margin: 5px 0;
+    }
+}
+

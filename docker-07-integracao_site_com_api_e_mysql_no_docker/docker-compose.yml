@@ -1,0 +1,44 @@
+version: '3'
+services:
+  node-app:
+    build:
+      context: ./api-node
+      dockerfile: Dockerfile
+    container_name: api-node
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/api-node/api-node
+      - /api-node/api-node/node_modules
+    networks:
+      - app-network
+  
+  site-react:
+    build:
+      context: ./site-react
+      dockerfile: Dockerfile
+    container_name: site-react
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/site-react/site-react
+      - /site-react/site-react/node_modules
+    networks:
+      - app-network
+  
+  mysql:
+    image: mysql:8.0.34
+    container_name: api-database
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: api_database
+    volumes:
+    - mysql-data:/var/lib/mysql
+    networks:
+     - app-network
+
+networks:
+  app-network:
+
+volumes:
+  mysql-data:
