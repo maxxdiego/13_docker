@@ -29,6 +29,8 @@ https://hub.docker.com/u/maxxdiego
 https://hub.docker.com
 ```
 
+# Primeiros passos no Docker:
+
 ### Baixar uma imagem de exemplo do Docker Hub
 ```bash
 docker pull hello-world
@@ -104,8 +106,6 @@ docker unpause <container_id>
 docker rm <container_id>
 ```
 
-### ------------------------------------------------------------------
-
 # Acessando o conteúdo de um site pelo navegador
 
 ### Baixar e rodar o exemplo de um site estático do Docker Hub
@@ -132,7 +132,6 @@ docker run -d -p 80:80 dockersamples/static-site
 ```bash
 http://localhost:80
 ```
-### ------------------------------------------------------------------
 
 ### Removendo as imagens
 ```bash
@@ -152,6 +151,39 @@ docker tag <nome_da_imagem_atual:tag_atual> <nome_da_nova_imagem:nova_tag>
 ### Removendo todas as imagens
 ```bash
 docker rmi $(docker image ls -aq) --force
+```
+
+# Fazer a build de um projeto existente no Docker:
+
+* Acessar o diretório onde está o projeto pelo terminal:
+```bash
+cd <endereco>
+Exemplo: cd C:\diego\projeto-base
+```
+
+* Listar arquivos
+```bash
+ls
+```
+
+* Criar a build, -t criar o nome para imagem, versão 1.0, "." ponto para indicar o diretório atual: 
+```bash
+docker build -t diego/app-node:1.0 .
+```
+
+* Listar as imagens:
+```bash
+docker images
+```
+
+* Executar a imagem, mapear a porta, indicar a porta 8080 da máquina corresponde à porta 8080 do docker, imagem que deve ser executada e a versão:
+```bash
+docker run -d -p 8080:8080 diego/app-node:1.0
+```
+
+* Abrir o endereço no navegador para acessar a rota inicial
+```bash
+http://localhost:8080
 ```
 
 <hr>
