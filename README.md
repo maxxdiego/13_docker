@@ -1,17 +1,28 @@
 # Docker
 ![NPM](https://img.shields.io/npm/l/react)
 
-# Descrição
-:warning: Ainda em construção. :construction:
+# Descrição:
+
+Docker é uma plataforma de software que facilita a criação, o teste e a implantação de aplicações em contêineres. Os contêineres são unidades padronizadas de software que empacotam o código da aplicação e todas as suas dependências, garantindo que ela funcione de maneira consistente em diferentes ambientes.
+
+## Principais Características do Docker
+- Contêineres: Docker encapsula a aplicação e suas dependências em contêineres, que são isolados uns dos outros e do sistema operacional host.
+- Portabilidade: Os contêineres Docker podem ser executados em qualquer lugar, seja no ambiente local, em servidores de produção, ou em nuvens públicas e privadas.
+- Eficiente em Recursos: Os contêineres compartilham o núcleo do sistema operacional host, tornando-os mais leves e eficientes em comparação com máquinas virtuais.
+- Facilidade de Configuração: Dockerfiles e Compose permitem definir e configurar o ambiente da aplicação de maneira declarativa e reprodutível.
+
+## Vantagens do Docker
+- Consistência: Garantia de que a aplicação funcionará de forma idêntica em diferentes ambientes, eliminando problemas de compatibilidade.
+- Agilidade no Desenvolvimento: Facilita a criação de ambientes de desenvolvimento e testes consistentes e isolados, acelerando o ciclo de desenvolvimento.
+- Escalabilidade: Simplifica o escalonamento de aplicações, permitindo a execução de múltiplos contêineres de uma aplicação em diferentes máquinas.
+- Facilidade de Implementação: Simplifica o processo de implantação, reduzindo o tempo e os erros associados a implantações manuais.
+
+Docker é amplamente utilizado para melhorar a eficiência do desenvolvimento, teste e implantação de aplicações, tornando-se uma ferramenta essencial no DevOps e na engenharia de software moderna.
 
 ### Meu repositório no Docker Hub:
 ```bash
 https://hub.docker.com/u/maxxdiego
 ```
-
-### ------------------------------------------------------------------
-
-# Aprendendo o Docker
 
 ### Endereço do Docker Hub (imagens oficiais)
 ```bash
@@ -142,6 +153,8 @@ docker tag <nome_da_imagem_atual:tag_atual> <nome_da_nova_imagem:nova_tag>
 ```bash
 docker rmi $(docker image ls -aq) --force
 ```
+
+<hr>
 
 # Autor
 
